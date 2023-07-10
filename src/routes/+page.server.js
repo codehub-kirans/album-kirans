@@ -64,7 +64,7 @@ async function getFileDownloadUrls(authJson, downloadAuthToken, filter) {
     const fileResponse = await fetch(apiUrl + '/b2api/v3/b2_list_file_names', fileOptions);
     const fileJson = await fileResponse.json();
     let files = fileJson.files;
-    files = files.slice(0, 2); //For testing, limit to 2 files due to bandwidth caps
+    // files = files.slice(0, 2); //For testing, limit to 2 files due to bandwidth caps
     // console.log(files);
 
     let id = 0;
