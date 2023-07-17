@@ -11,11 +11,11 @@
 	</Alert>
 </div>
 
-<Gallery items={data.galleryImages} class="gap-4 grid-cols-1 md:grid-cols-1" />
+<!-- <Gallery items={data.galleryImages} class="gap-4 grid-cols-1 md:grid-cols-1" /> -->
 
-<!-- {#each data.galleryImages as image, i}
+{#each data.galleryImages as image, i}
 	<Image src={`${image.src}`} alt="wedding gallery" />
-{/each} -->
+{/each}
 
 <Hr class="my-8 w-64 h-1" icon>
 	<svg
