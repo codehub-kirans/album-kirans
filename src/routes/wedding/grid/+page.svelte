@@ -1,6 +1,6 @@
 <script>
 	import Image from '$lib/components/Image.svelte';
-	import { Alert, Hr } from 'flowbite-svelte';
+	import { Gallery, Alert, Hr } from 'flowbite-svelte';
 
 	export let data;
 </script>
@@ -11,11 +11,12 @@
 	</Alert>
 </div>
 
-{#each data.galleryImages as image, i}
-	<Image src={`${image.src}`} alt="wedding gallery" />
-{/each}
+<Gallery items={data.galleryImages} class="gap-4 grid-cols-1 md:grid-cols-1" />
 
-<!-- <Gallery items={data.galleryImages} class="gap-4 grid-cols-1 md:grid-cols-1" /> -->
+<!-- {#each data.galleryImages as image, i}
+	<Image src={`${image.src}`} alt="wedding gallery" />
+{/each} -->
+
 <Hr class="my-8 w-64 h-1" icon>
 	<svg
 		aria-hidden="true"
